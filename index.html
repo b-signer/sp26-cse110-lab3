@@ -1,8 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html>
+<head>
+    <!-- Metadata -->
+    <title>Pomodoro Timer First Brainstorm</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <nav>
+        <a href="#info">Info</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#media">Media</a> |
+        <a href="#form">Form</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="info">
+    <h2>Meeting Details</h2>
+    <p><strong>Topic:</strong> Brainstorming</p>
+    <p><strong>Date:</strong> April 14, 2026</p>
+
+    <h3>Attendance</h3>
+    <ul>
+        <li>Alice</li>
+        <li>Bob</li>
+        <li>Charlie</li>
+    </ul>
+    <hr>
+</section>
+
+<section id="agenda">
+    <h2>Agenda</h2>
+
+    <div>
+        <h3>Planned Topics</h3>
+        <ol>
+            <li>Discuss app features</li>
+            <li>Design UI ideas</li>
+            <li>Assign tasks</li>
+        </ol>
+
+        <h3>Unfinished Business</h3>
+        <ul>
+            <li>Finalize timer logic</li>
+        </ul>
+
+        <h3>New Business</h3>
+        <ul>
+            <li>Consider mobile support</li>
+        </ul>
+
+        <h3>Miscellaneous</h3>
+        <p>This is a <b>bold</b> note and a <strong>critical</strong> reminder.</p>
+        <p>Some <i>casual</i> thoughts and <em>important emphasis</em>.</p>
+        <p>Visit <a href="https://google.com">Google</a> for research.<br>Line break example.</p>
+
+        <span>All ideas are tentative.</span>
+    </div>
+</section>
+
+<section id="media">
+    <h2>Diagrams and Recordings</h2>
+
+    <h3>Whiteboard Diagram</h3>
+    <img src="./screenshots/example.png" alt="Whiteboard diagram" width="300">
+
+    <h3>Audio Recording</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Video Recording</h3>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section>
+    <h2>Extra Notes</h2>
+    <details>
+        <summary>Click for additional comments</summary>
+        <p>Questions and concerns can be added here.</p>
+    </details>
+</section>
+
+</main>
+
+<footer>
+    <p>End of Meeting Minutes</p>
+</footer>
+
+<!-- Form -->
+<section id="form">
+    <h2>Feedback Form</h2>
+
+    <form>
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <p>Name: <input type="text"></p>
+            <p>Date: <input type="date"></p>
+
+            <p>
+                Topics Interested:
+                <input type="checkbox"> UI
+                <input type="checkbox"> Backend
+            </p>
+
+            <p>
+                Rating:
+                <input type="radio" name="rating"> Good
+                <input type="radio" name="rating"> Bad
+            </p>
+
+            <p>Comments:</p>
+            <textarea rows="4" cols="30"></textarea>
+
+            <p>
+                Favorite Topic:
+                <input list="topics">
+                <datalist id="topics">
+                    <option value="UI">
+                    <option value="Backend">
+                </datalist>
+            </p>
+
+            <p>
+                Department:
+                <select>
+                    <option>Engineering</option>
+                    <option>Design</option>
+                </select>
+            </p>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+</section>
+
+</body>
 </html>
