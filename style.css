@@ -180,18 +180,16 @@ fieldset:has(input[type="checkbox"]) {
   background-color: rgba(74, 111, 165, 0.03);
 }
 
-form {
-  & fieldset {
-    border: 1px solid var(--primary);
-    border-radius: 8px;
-    padding: 1.25rem;
+form fieldset {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
 
-    & legend {
-      font-weight: 600;
-      color: var(--primary);
-      padding: 0 0.5rem;
-    }
-  }
+form fieldset legend {
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0 0.5rem;
 }
 
 .features-grid {
@@ -203,7 +201,7 @@ form {
 }
 
 .feature-card {
-  background-color: color(srgb 0.95 0.97 1);     /* wider-gamut color() */
+  background-color: rgb(242, 247, 255);
   border: 1px solid rgba(74, 111, 165, 0.2);
   border-radius: 6px;
   padding: 0.75rem 1rem;
@@ -246,7 +244,7 @@ button[type="submit"]:active {
 
 hr {
   border: none;
-  border-top: 2mm solid color(display-p3 0.29 0.44 0.65); /* absolute: mm, wider-gamut */
+  border-top: 2mm solid rgb(74, 112, 166);
   opacity: 0.25;
   margin: 1rem 0;
 }
