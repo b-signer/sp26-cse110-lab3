@@ -4,6 +4,12 @@
     <!-- Metadata -->
     <title>Pomodoro Timer First Brainstorm</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts — Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -12,9 +18,9 @@
 <header>
     <h1>Pomodoro Timer First Brainstorm</h1>
     <nav>
-        <a href="#info">Info</a> |
-        <a href="#agenda">Agenda</a> |
-        <a href="#media">Media</a> |
+        <a href="#info">Info</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#media">Media</a>
         <a href="#form">Form</a>
     </nav>
 </header>
@@ -35,8 +41,24 @@
     <hr>
 </section>
 
-<section id="agenda">
+<section id="agenda" class="highlight">
     <h2>Agenda</h2>
+
+    <!-- Feature cards — grid layout (3 children) -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <h4>Focus Timer</h4>
+            <p>25-minute work intervals with a visual countdown.</p>
+        </div>
+        <div class="feature-card">
+            <h4>Break Alerts</h4>
+            <p>Notifications for short (5 min) and long (15 min) breaks.</p>
+        </div>
+        <div class="feature-card">
+            <h4>Session Log</h4>
+            <p>Track completed Pomodoros across the day.</p>
+        </div>
+    </div>
 
     <div>
         <h3>Planned Topics</h3>
